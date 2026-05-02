@@ -1,38 +1,62 @@
-Barriers to Mobile Banking Adoption Among University Students in Pakistan
-Overview
-This project investigates why university students in Pakistan hesitate to adopt
-mobile banking apps such as JazzCash, Easypaisa, and SadaPay. A machine learning
-classification system is built to identify the dominant barrier type for each student.
-Research Topic
-AF3008 — Business Research & Data Mining | FAST NUCES Islamabad | Spring 2026
-Barrier Categories
+# Barriers to Mobile Banking and Digital Wallet Adoption Among University Students in Pakistan
 
-Technological — poor internet access, low ease of use
-Psychological — privacy concerns, fear of fraud
-Financial — limited financial capacity
-Social — low peer and family influence
+> AF3008 — Business Research & Data Mining | FAST NUCES Islamabad | Spring 2026  
+> **Student:** Okasha Saeed | **ID:** i235556
 
-Models Used
+---
 
-Baseline (majority class) — 20.0% accuracy
-Logistic Regression — 85.0% accuracy
-Decision Tree (Gini, max depth 4) — 60.0% accuracy
+## Overview
 
-Dataset
+This project investigates why university students in Pakistan hesitate to adopt mobile banking apps such as **JazzCash**, **Easypaisa**, and **SadaPay**. Despite their widespread availability, many students still prefer cash. This research identifies the dominant barrier type for each student using a machine learning classification approach.
 
-200 synthetic student survey responses
-7 Likert-scale features
-4 balanced barrier classes (50 each)
+---
 
-Files
+## Barrier Categories
 
-mobile_banking_dataset.csv — full dataset
-colab_implementation.ipynb — full implementation pipeline
-fig1 to fig6 — all result graphs
+| Category | Description |
+|---|---|
+| Technological | Poor internet access, low perceived ease of use |
+| Psychological | Privacy concerns, fear of fraud, distrust |
+| Financial | Limited financial capacity, cannot afford data plans |
+| Social | Low peer influence, family norms discouraging adoption |
 
-Project Website
-https://sites.google.com/view/barrierstodigitalbankadoption
-GitHub Repository
-https://github.com/i235556-sys/mobile-banking-barrier-classification
-Tech Stack
-Python | Scikit-learn | Pandas | NumPy | Matplotlib | Seaborn | Google Colab
+---
+
+**Logistic Regression** achieved the best performance with **85.0% accuracy**.
+
+---
+
+## Dataset
+
+- 200 synthetic student survey responses
+- 7 Likert-scale features (scored 1–5)
+- 4 balanced barrier classes — 50 students per class
+- Features: Perceived Ease of Use, Internet Access, Peer Influence, Financial Status, Prior Experience, Privacy Concern, Family Norms
+
+---
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3-orange)
+![Pandas](https://img.shields.io/badge/Pandas-2.0-blue)
+![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
+
+---
+
+
+---
+
+## Links
+
+- **Project Website:** https://sites.google.com/view/barrierstodigitalbankadoption
+- **LinkedIn Post:** https://www.linkedin.com/posts/okasha-saeed-68186a28b_machinelearning-datascience-fintech-share-7456071144115400704-vAem
+
+---
+
+## Key Findings
+
+- Logistic Regression outperforms Decision Tree with 85.0% accuracy
+- Technological and Financial barriers are the most distinctly separable categories
+- Psychological and Social barriers show overlap due to conceptual similarity
+- Machine learning can effectively support targeted digital financial inclusion strategies
